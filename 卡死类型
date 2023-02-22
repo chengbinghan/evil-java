@@ -1,0 +1,14 @@
+#### 正则表达式导致卡死
+
+    public static Pattern urlPatternHostName = Pattern.compile("(jdbc:\\w+).*?\\b(\\w+([.]?[\\w]+)+)\\b.*?(\\b\\d+\\b).*");
+
+    public static void main(String[] args) {
+        Matcher matcher = urlPatternHostName.matcher("jdbc:h2:file:/Users/fade/powerjob/server/h2/2/powerjob_server_db");
+
+        System.out.println(matcher.find());
+    }
+
+#### 随机数某些场景卡死
+https://www.cnblogs.com/whm-blog/p/13432332.html
+#### mac 启动服务卡死
+https://blog.csdn.net/puma_dong/article/details/53096149
