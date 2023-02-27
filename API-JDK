@@ -1,0 +1,8 @@
+1、SimpleDateFormat格式化HH:mm和hh:mm区别
+HH:mm是24小时制
+
+hh:mm是12小时制
+
+System.out.println( new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date())); //输出2022-01-04 02:08:16
+
+System.out.println( new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())); //输出2022-01-04 14:08:16
